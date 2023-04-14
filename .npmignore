@@ -24,3 +24,6 @@ docs
 
 # Github
 .github
+
+# Jetbrains
+.idea
