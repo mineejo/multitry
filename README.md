@@ -14,15 +14,15 @@ Multitry is a wrapper with a different take on `try-catch-finally` construction.
 Choose the way you like, if you don't understand what these commands are, use the first one with the npm.
 
 ```shell
-npm install multitry
+npm install @mineejo/multitry
 ```
 
 ```shell
-yarn add multitry
+yarn add @mineejo/multitry
 ```
 
 ```shell
-pnpm add multitry
+pnpm add @mineejo/multitry
 ```
 
 ## Example
