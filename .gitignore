@@ -1,0 +1,14 @@
+# Dependency directories
+node_modules/
+
+# TypeScript cache
+\*.tsbuildinfo
+
+# Generate output
+dist
+
+# Yarn
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz

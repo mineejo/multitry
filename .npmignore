@@ -1,0 +1,23 @@
+# Lib
+/lib
+
+# Ignores
+.gitignore
+.prettierignore
+
+# TypeScript
+tsconfig.json
+
+# Dependency directories
+node_modules/
+
+# TypeScript cache
+\*.tsbuildinfo
+
+# Yarn
+.yarn
+yarn.lock
+.yarnrc.yml
+
+# Generate docs
+docs

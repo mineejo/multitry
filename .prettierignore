@@ -1,0 +1,11 @@
+# Dependency directories
+node_modules/
+
+# Generate output
+dist
+
+# Yarn
+.yarn
+
+# Generate docs
+docs

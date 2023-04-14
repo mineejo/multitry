@@ -1,0 +1,74 @@
+{
+  "name": "multitry",
+  "version": "1.0.0",
+  "author": "mineejo <mineejo.dev@gmail.com> (https://github.com/mineejo)",
+  "description": "Multitry is a wrapper with a different take on try-catch-finally construction",
+  "type": "module",
+  "homepage": "https://github.com/mineejo/multitry.git",
+  "license": "BlueOak-1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mineejo/multitry.git"
+  },
+  "keywords": [
+    "nodejs",
+    "javascript",
+    "construction",
+    "wrapper",
+    "typescript",
+    "catch",
+    "try",
+    "finally"
+  ],
+  "scripts": {
+    "clean": "rimraf dist && rimraf docs",
+    "lint": "eslint ./lib",
+    "format": "prettier --write .",
+    "build": "yarn clean && tsc && yarn typedoc ./lib/index.ts",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.0",
+    "@types/node": "^18.15.11",
+    "@typescript-eslint/eslint-plugin": "^5.57.1",
+    "@typescript-eslint/parser": "^5.57.1",
+    "eslint": "^8.37.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "jest": "^29.5.0",
+    "prettier": "^2.8.7",
+    "rimraf": "^4.4.1",
+    "ts-jest": "^29.1.0",
+    "typedoc": "^0.24.1",
+    "typescript": "^5.0.3"
+  },
+  "eslintConfig": {
+    "extends": [
+      "eslint:recommended",
+      "plugin:@typescript-eslint/recommended",
+      "plugin:prettier/recommended"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+      "@typescript-eslint",
+      "prettier"
+    ],
+    "root": true,
+    "ignorePatterns": [
+      "node_modules/**/*"
+    ]
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node"
+  },
+  "packageManager": "yarn@3.5.0",
+  "engines": {
+    "node": ">=16"
+  },
+  "exports": {
+    "types": "./dst/lib/index.d.ts",
+    "default": "./dist/lib/index.js"
+  },
+  "main": "./dist/lib/index.js"
+}
