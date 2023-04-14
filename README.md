@@ -1,14 +1,11 @@
 # Multitry
 
-- [API][APIURL]: https://mineejo.github.io/multitry/
-- [NPM][NPMURL]: https://npmjs.org/package/multitry
-- [CODE][CODE]: https://github.com/mineejo/multitry
+[![API](https://img.shields.io/badge/API-3178C6.svg?style=flat-square)](https://mineejo.github.io/multitry/)
+[![NPM](https://img.shields.io/npm/v/multitry.svg?style=flat-square&labelColor=cc3534&color=gray&label=NPM)](https://www.npmjs.com/package/multitry)
 
 [APIURL]: https://mineejo.github.io/multitry/
 
 [NPMURL]: https://npmjs.org/package/multitry
-
-[CODE]: https://github.com/mineejo/multitry
 
 Multitry is a wrapper with a different take on `try-catch-finally` construction.
 
