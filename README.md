@@ -1,7 +1,7 @@
 # Multitry
 
 [![API](https://img.shields.io/badge/API-3178C6.svg)](https://mineejo.github.io/multitry/)
-[![NPM](https://img.shields.io/npm/v/@mineejo/multitry.svg?style=&labelColor=cc3534&color=gray&label=NPM)](https://www.npmjs.com/package/multitry)
+[![NPM](https://img.shields.io/npm/v/multitry.svg?style=&labelColor=cc3534&color=gray&label=NPM)](https://www.npmjs.com/package/multitry)
 
 [APIURL]: https://mineejo.github.io/multitry/
 
@@ -14,15 +14,15 @@ Multitry is a wrapper with a different take on `try-catch-finally` construction.
 Choose the way you like, if you don't understand what these commands are, use the first one with the npm.
 
 ```shell
-npm install @mineejo/multitry
+npm install multitry
 ```
 
 ```shell
-yarn add @mineejo/multitry
+yarn add multitry
 ```
 
 ```shell
-pnpm add @mineejo/multitry
+pnpm add multitry
 ```
 
 ## Example

@@ -22,8 +22,5 @@ yarn.lock
 # Generate docs
 docs
 
-# Github
-.github
-
 # Jetbrains
 .idea
