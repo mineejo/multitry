@@ -27,6 +27,9 @@
     "build": "yarn clean && tsc && yarn typedoc ./lib/index.ts",
     "test": "jest"
   },
+  "publishConfig": {
+    "mineejo:registry": "https://npm.pkg.github.com"
+  },
   "devDependencies": {
     "@types/jest": "^29.5.0",
     "@types/node": "^18.15.11",
