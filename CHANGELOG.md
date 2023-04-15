@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.2](https://github.com/mokkapps/changelog-generator-demo/compare/v1.0.1...v1.0.2) (2023-04-15)
+
+### Bug Fixes
+
+- different look of the catalogs ([48e876d](https://github.com/mokkapps/changelog-generator-demo/commits/48e876dcf2a45e3c6c98c679338d32e384168492))
+- **husky:** the remaining files after the build that did not make it to the release ([1a52a43](https://github.com/mokkapps/changelog-generator-demo/commits/1a52a4369f5fa5a5eca79c915e8ba269ef59684d))
+- **package:** useless .husky directory for the npm ([0e8f4b0](https://github.com/mokkapps/changelog-generator-demo/commits/0e8f4b01a6550fe662c0e231cd4dc851514f1732))
+
 ### [1.0.1](https://github.com/mokkapps/changelog-generator-demo/compare/v1.0.0...v1.0.1) (2023-04-15)
 
 ## 1.0.0 (2023-04-15)
