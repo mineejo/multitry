@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0](https://github.com/mineejo/multitry/compare/v1.0.3...v1.1.0) (2023-04-15)
+
+### Features
+
+- specify several constructions in the function ([c3b3fde](https://github.com/mineejo/multitry/commits/c3b3fde454fc22378911c478000003094a6f6aa0))
+- update jsdoc ([c80627d](https://github.com/mineejo/multitry/commits/c80627d44843a182c47f2c8e75c17c921464bf9d))
+
 ### [1.0.3](https://github.com/mineejo/multitry/compare/v1.0.2...v1.0.3) (2023-04-15)
 
 ### Bug Fixes
