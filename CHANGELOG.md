@@ -1,7 +1,12 @@
 # Changelog
 
-All notable changes to this project will be documented in this file.
-See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+### [1.0.3](https://github.com/mineejo/multitry/compare/v1.0.2...v1.0.3) (2023-04-15)
+
+### Bug Fixes
+
+- **config:** remove the rest of the example ([a8d74df](https://github.com/mineejo/multitry/commits/a8d74df9d5bc7be47752eae2b80ea1fd5f76a9c9))
 
 ### [1.0.2](https://github.com/mineejo/multitry/compare/v1.0.1...v1.0.2) (2023-04-15)
 
