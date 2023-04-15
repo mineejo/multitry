@@ -8,17 +8,22 @@
  *
  * @returns a value or `undefined`, in case of an error without handling the `Error` object.
  */
-export function multitry<Type>(construct: {
-  try: () => Type;
-  catch?: (error: Error) => Type | Error;
-  finally?: () => void;
-}): Type | Error | undefined {
-  try {
-    return construct.try();
-  } catch (error) {
-    if (construct.catch) return construct.catch(error) ?? error;
-  } finally {
-    if (construct.finally) construct.finally();
+export function multitry<Type>(
+  ...construct: {
+    try: () => Type;
+    catch?: (error: Error) => Error | Type;
+    finally?: () => void;
+  }[]
+): Type | Error | undefined {
+  for (const c of construct) {
+    try {
+      const result = c.try();
+      if (result) return result;
+    } catch (error) {
+      if (c.catch) return c.catch(error) ?? error;
+    } finally {
+      if (c.finally) c.finally();
+    }
   }
   return;
 }
