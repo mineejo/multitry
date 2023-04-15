@@ -1,6 +1,6 @@
 {
   "name": "multitry",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "author": "mineejo <mineejo.dev@gmail.com> (https://github.com/mineejo)",
   "description": "Multitry is a wrapper with a different take on try-catch-finally construction",
   "type": "module",
@@ -25,9 +25,17 @@
     "lint": "eslint ./lib",
     "format": "prettier --write .",
     "build": "yarn clean && tsc && yarn typedoc ./lib/index.ts",
-    "test": "jest"
+    "test": "jest",
+    "prepare": "husky install",
+    "release": "standard-version",
+    "release:first": "yarn release -- --first-release",
+    "release:minor": "yarn release --release-as minor",
+    "release:patch": "yarn release --release-as patch",
+    "release:major": "yarn release --release-as major"
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.6.1",
+    "@commitlint/config-conventional": "^17.6.1",
     "@types/jest": "^29.5.0",
     "@types/node": "^18.15.11",
     "@typescript-eslint/eslint-plugin": "^5.57.1",
@@ -35,9 +43,11 @@
     "eslint": "^8.37.0",
     "eslint-config-prettier": "^8.8.0",
     "eslint-plugin-prettier": "^4.2.1",
+    "husky": "^8.0.0",
     "jest": "^29.5.0",
     "prettier": "^2.8.7",
     "rimraf": "^4.4.1",
+    "standard-version": "^9.5.0",
     "ts-jest": "^29.1.0",
     "typedoc": "^0.24.1",
     "typescript": "^5.0.3"
