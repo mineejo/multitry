@@ -24,7 +24,7 @@
     "clean": "rimraf dist && rimraf docs",
     "lint": "eslint ./lib",
     "format": "prettier --write .",
-    "build": "yarn clean && tsc && yarn typedoc ./lib/index.ts",
+    "build": "yarn clean && tsc && yarn typedoc ./lib/index.ts && yarn format",
     "test": "jest",
     "prepare": "husky install",
     "release": "standard-version",
