@@ -3,4 +3,4 @@
 
 yarn test
 yarn build
-git add "./docs"
+git add -A
