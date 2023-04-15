@@ -4,7 +4,6 @@
 [![API](https://img.shields.io/badge/API-3178C6.svg)][APIURL]
 
 [NPMURL]: https://npmjs.org/package/multitry
-
 [APIURL]: https://mineejo.github.io/multitry/
 
 Multitry is a wrapper with a different take on `try-catch-finally` construction.
@@ -31,7 +30,7 @@ An example where an error is ignored and the return value can either be a value 
 
 ```js
 const result = multitry({
-    try: () => JSON.parse("Hello world!"),
+  try: () => JSON.parse("Hello world!"),
 });
 
 console.log(result); // "Hello world!"
@@ -41,8 +40,8 @@ An example where an error is ignored and the return value can either be a value,
 
 ```js
 const result = multitry({
-    try: () => JSON.parse("Hello world! {"),
-    catch: () => undefined
+  try: () => JSON.parse("Hello world! {"),
+  catch: () => undefined,
 });
 
 console.error(result); // SyntaxError: Unexpected token H in JSON at position 0...
@@ -52,7 +51,7 @@ You can interact with an error in the catch function. Handle the error or just o
 
 ```js
 const result = multitry({
-    try: () => JSON.parse("Hello world! {"),
-    catch: (e) => console.error(e)
+  try: () => JSON.parse("Hello world! {"),
+  catch: (e) => console.error(e),
 }); // SyntaxError: Unexpected token H in JSON at position 0...
 ```
