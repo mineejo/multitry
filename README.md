@@ -55,3 +55,15 @@ const result = multitry({
   catch: (e) => console.error(e),
 }); // SyntaxError: Unexpected token H in JSON at position 0...
 ```
+
+JSX / TSX support when you want to render something in the DOM.
+
+```jsx
+<Multitry
+  try={() => JSON.parse("Hello world! {")}
+  catch={(e) => {
+    console.error(e);
+    return e.toString();
+  }}
+/> // SyntaxError: Unexpected token 'H', "Hello world! {" is not valid JSON
+```
