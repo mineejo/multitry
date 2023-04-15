@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.0.1](https://github.com/mineejo/multitry/compare/v2.0.0...v2.0.1) (2023-04-15)
+
+
+### Bug Fixes
+
+* **package:** remove the source maps, since they are not used ([0d8aaca](https://github.com/mineejo/multitry/commits/0d8aacab57a3bd66a1c76ab8b6f42a9fb3075d75))
+
 ## [2.0.0](https://github.com/mineejo/multitry/compare/v1.1.0...v2.0.0) (2023-04-15)
 
 
