@@ -1,5 +1,5 @@
 # Lib
-lib
+/lib/
 
 # Ignores
 .gitignore
