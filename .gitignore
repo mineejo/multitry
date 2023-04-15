@@ -2,7 +2,7 @@
 node_modules/
 
 # TypeScript cache
-\*.tsbuildinfo
+dist/tsconfig.tsbuildinfo
 
 # Generate output
 dist

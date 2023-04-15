@@ -12,7 +12,7 @@ tsconfig.json
 node_modules
 
 # TypeScript cache
-\*.tsbuildinfo
+dist/tsconfig.tsbuildinfo
 
 # Yarn
 .yarn
