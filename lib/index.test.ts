@@ -26,6 +26,20 @@ test("multitry: async return result", async () => {
   expect(result).toBe(message);
 });
 
+test("multitry: multi return result", () => {
+  const result = multitry(
+    {
+      try: () => undefined,
+    },
+    {
+      try: () => "Hello world!",
+    }
+  );
+
+  const message = "Hello world!";
+  expect(result).toBe(message);
+});
+
 test("multitry: return error", () => {
   const error = multitry({
     // eslint-disable-next-line @typescript-eslint/ban-ts-comment
