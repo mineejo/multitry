@@ -13,7 +13,7 @@
  *   will be executed in the try block. It can also have an optional
  *   catch property.
  *
- * @returns The multitry function can return a value of type Type,
+ * @returns The multitry function can return a value of type,
  * an Error object, or undefined.
  */
 export function multitry<Type>(
