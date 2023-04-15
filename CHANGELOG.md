@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.0.2](https://github.com/mineejo/multitry/compare/v2.0.1...v2.0.2) (2023-04-15)
+
+
+### Bug Fixes
+
+* **build:** line break on the next line in the assembly ([e948c8f](https://github.com/mineejo/multitry/commits/e948c8fa87c98664d216d7f600d3b4d6cc80efa2))
+* **prettier:** ignoring build files ([b6d713a](https://github.com/mineejo/multitry/commits/b6d713aeb7b67ba56ea969beb0559e4236a6db8f))
+
 ### [2.0.1](https://github.com/mineejo/multitry/compare/v2.0.0...v2.0.1) (2023-04-15)
 
 
