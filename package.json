@@ -28,10 +28,10 @@
     "test": "jest",
     "prepare": "husky install",
     "publish": "npm publish --access public",
-    "release": "standard-version && yarn publish",
-    "release:minor": "standard-version --release-as minor && yarn publish",
-    "release:patch": "standard-version --release-as patch && yarn publish",
-    "release:major": "standard-version --release-as major && yarn publish"
+    "release": "git add -A && standard-version && yarn publish",
+    "release:minor": "git add -A && standard-version --release-as minor && yarn publish",
+    "release:patch": "git add -A && standard-version --release-as patch && yarn publish",
+    "release:major": "git add -A && standard-version --release-as major && yarn publish"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.6.1",

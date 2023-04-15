@@ -3,4 +3,3 @@
 
 yarn test
 yarn build
-git add -A
