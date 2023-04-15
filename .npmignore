@@ -9,21 +9,25 @@
 tsconfig.json
 
 # Dependency directories
-node_modules
+/node_modules/
 
 # TypeScript cache
 dist/tsconfig.tsbuildinfo
 
 # Yarn
-.yarn
+/.yarn/
 yarn.lock
 .yarnrc.yml
 
 # Generate docs
-docs
+/docs/
 
 # Jetbrains
-.idea
+/.idea/
 
 # Husky
-.husky
+/.husky/
+
+# Commits
+.commitlintrc.json
+.versionrc.json

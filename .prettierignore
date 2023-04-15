@@ -1,14 +1,14 @@
 # Dependency directories
-node_modules
+/node_modules/
 
 # Generate output
-dist
+/dist/
 
 # Yarn
-.yarn
+/.yarn/
 
 # Generate docs
-docs
+/docs/
 
 # Jetbrains
-.idea
+/.idea/
