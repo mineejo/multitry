@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.0.0](https://github.com/mineejo/multitry/compare/v1.1.0...v2.0.0) (2023-04-15)
+
+
+### ⚠ BREAKING CHANGES
+
+* ignoring the library with code for npm
+
+### Bug Fixes
+
+* folder paths ([612ec9d](https://github.com/mineejo/multitry/commits/612ec9da3db003f41d12ed85e6d58118081a00cb))
+* ignoring the library with code for npm ([cdf3361](https://github.com/mineejo/multitry/commits/cdf336157a3232d068e714e74b41e97df0168cdb))
+* tsbuildinfo which was not ignored, but should have ([29bb7ed](https://github.com/mineejo/multitry/commits/29bb7ed537676db4709d29e742b22eb2572036c5))
+
 ## [1.1.0](https://github.com/mineejo/multitry/compare/v1.0.3...v1.1.0) (2023-04-15)
 
 ### Features
