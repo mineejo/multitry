@@ -24,3 +24,6 @@ docs
 
 # Jetbrains
 .idea
+
+# Husky
+.husky
