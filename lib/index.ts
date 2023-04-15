@@ -26,11 +26,17 @@ export function multitry<Type>(
   for (const block of blocks) {
     try {
       const result = block.try();
-      if (result) return result;
+      if (result) {
+        return result;
+      }
     } catch (error) {
-      if (block.catch) return block.catch(error) ?? error;
+      if (block.catch) {
+        return block.catch(error) ?? error;
+      }
     } finally {
-      if (block.finally) block.finally();
+      if (block.finally) {
+        block.finally();
+      }
     }
   }
   return;
