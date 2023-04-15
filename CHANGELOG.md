@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.1.1](https://github.com/mineejo/multitry/compare/v2.1.0...v2.1.1) (2023-04-15)
+
+
+### Bug Fixes
+
+* **type:** possible types that cannot be converted to string ([49f90ec](https://github.com/mineejo/multitry/commits/49f90ec9001e01cbb79974cbab61a3e58de755bb))
+
 ## [2.1.0](https://github.com/mineejo/multitry/compare/v2.0.2...v2.1.0) (2023-04-15)
 
 
