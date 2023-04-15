@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.1.0](https://github.com/mineejo/multitry/compare/v2.0.2...v2.1.0) (2023-04-15)
+
+
+### Features
+
+* **package:** jsx support ([aba952f](https://github.com/mineejo/multitry/commits/aba952f18191f9de6da00e4a3803fb9521bada46))
+
 ### [2.0.2](https://github.com/mineejo/multitry/compare/v2.0.1...v2.0.2) (2023-04-15)
 
 
