@@ -47,7 +47,7 @@ export function multitry<Type>(
  * try, catch, and finally blocks in jsx/tsx.
  *
  * @param {{
- *     try: () => string;
+ *     try: () => string | void;
  *     catch?: (error: Error) => Error | string;
  *     finally?: () => void;
  *   }[]} blocks - blocks is an array of objects, where each object
@@ -56,21 +56,31 @@ export function multitry<Type>(
  *   will be executed in the try block. It can also have an optional
  *   catch property.
  *
- * @returns The `Multitry` function is returning the result of calling
- * the `multitry` function with an object containing a `try` function,
- * a `catch` function (if provided), and a `finally` function
- * (if provided). The `try` function is the only required
- * property and is expected to return a string.
- * The `catch` function, if provided, takes an `Error
+ * @returns The `Multitry` function returns a string, an Error object, or undefined.
  */
 export function Multitry(blocks: {
-  try: () => string;
+  try: () => string | void;
   catch?: (error: Error) => Error | string;
   finally?: () => void;
-}) {
+}): string | Error | undefined {
   return multitry({
-    try: () => blocks["try"](),
-    catch: (e) => (blocks?.["catch"] ? blocks["catch"](e) : e.toString()),
-    finally: () => (blocks?.["finally"] ? blocks["finally"]() : ""),
+    try: () => {
+      if (blocks?.["try"]) {
+        return `${blocks["try"]()}`;
+      }
+      return "";
+    },
+    catch: (e) => {
+      if (blocks?.["catch"]) {
+        return `${blocks["catch"](e)}`;
+      }
+      return e.toString();
+    },
+    finally: () => {
+      if (blocks?.["finally"]) {
+        blocks["finally"]();
+      }
+      return "";
+    },
   });
 }
