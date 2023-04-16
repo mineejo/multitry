@@ -1,4 +1,4 @@
-name: push a documentation
+name: build
 
 on:
   push:
