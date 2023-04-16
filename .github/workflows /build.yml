@@ -15,16 +15,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-
       - name: Setup Node.js
         uses: actions/setup-node@v1
         with:
-        node-version: 16
+          node-version: 16
       - run: npm install -g yarn
-
       - name: Build docs
         run: yarn install && yarn build:docs
-
       - name: Commit build
         run: |
           git add "./docs"
