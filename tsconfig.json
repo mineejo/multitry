@@ -1,7 +1,9 @@
 {
   "compilerOptions": {
     // ESM | package.json: "engines": { "node": ">=16" }
-    "lib": ["ES2021"],
+    "lib": [
+      "ES2021"
+    ],
     "target": "ES2021",
     "module": "node16",
     "moduleResolution": "node16",
@@ -25,6 +27,12 @@
     // OTHER
     "jsx": "react-jsx"
   },
-  "include": ["./**/*.ts", "./**/*.tsx"],
-  "exclude": ["./**/*.test.ts", "node_modules/**/*"]
+  "include": [
+    "./**/*.ts",
+    "./**/*.tsx"
+  ],
+  "exclude": [
+    "./**/*.test.ts",
+    "node_modules/**/*"
+  ]
 }

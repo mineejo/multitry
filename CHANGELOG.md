@@ -1,38 +1,39 @@
 # Changelog
 
-All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+All notable changes to this project will be documented in this file.
+See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
 ### [2.1.1](https://github.com/mineejo/multitry/compare/v2.1.0...v2.1.1) (2023-04-15)
 
-
 ### Bug Fixes
 
-* **type:** possible types that cannot be converted to string ([49f90ec](https://github.com/mineejo/multitry/commits/49f90ec9001e01cbb79974cbab61a3e58de755bb))
+* **type:** possible types that cannot be converted to
+  string ([49f90ec](https://github.com/mineejo/multitry/commits/49f90ec9001e01cbb79974cbab61a3e58de755bb))
 
 ## [2.1.0](https://github.com/mineejo/multitry/compare/v2.0.2...v2.1.0) (2023-04-15)
 
-
 ### Features
 
-* **package:** jsx support ([aba952f](https://github.com/mineejo/multitry/commits/aba952f18191f9de6da00e4a3803fb9521bada46))
+* **package:** jsx
+  support ([aba952f](https://github.com/mineejo/multitry/commits/aba952f18191f9de6da00e4a3803fb9521bada46))
 
 ### [2.0.2](https://github.com/mineejo/multitry/compare/v2.0.1...v2.0.2) (2023-04-15)
 
-
 ### Bug Fixes
 
-* **build:** line break on the next line in the assembly ([e948c8f](https://github.com/mineejo/multitry/commits/e948c8fa87c98664d216d7f600d3b4d6cc80efa2))
-* **prettier:** ignoring build files ([b6d713a](https://github.com/mineejo/multitry/commits/b6d713aeb7b67ba56ea969beb0559e4236a6db8f))
+* **build:** line break on the next line in the
+  assembly ([e948c8f](https://github.com/mineejo/multitry/commits/e948c8fa87c98664d216d7f600d3b4d6cc80efa2))
+* **prettier:** ignoring build
+  files ([b6d713a](https://github.com/mineejo/multitry/commits/b6d713aeb7b67ba56ea969beb0559e4236a6db8f))
 
 ### [2.0.1](https://github.com/mineejo/multitry/compare/v2.0.0...v2.0.1) (2023-04-15)
 
-
 ### Bug Fixes
 
-* **package:** remove the source maps, since they are not used ([0d8aaca](https://github.com/mineejo/multitry/commits/0d8aacab57a3bd66a1c76ab8b6f42a9fb3075d75))
+* **package:** remove the source maps, since they are not
+  used ([0d8aaca](https://github.com/mineejo/multitry/commits/0d8aacab57a3bd66a1c76ab8b6f42a9fb3075d75))
 
 ## [2.0.0](https://github.com/mineejo/multitry/compare/v1.1.0...v2.0.0) (2023-04-15)
-
 
 ### ⚠ BREAKING CHANGES
 
@@ -41,21 +42,25 @@ All notable changes to this project will be documented in this file. See [standa
 ### Bug Fixes
 
 * folder paths ([612ec9d](https://github.com/mineejo/multitry/commits/612ec9da3db003f41d12ed85e6d58118081a00cb))
-* ignoring the library with code for npm ([cdf3361](https://github.com/mineejo/multitry/commits/cdf336157a3232d068e714e74b41e97df0168cdb))
-* tsbuildinfo which was not ignored, but should have ([29bb7ed](https://github.com/mineejo/multitry/commits/29bb7ed537676db4709d29e742b22eb2572036c5))
+* ignoring the library with code for
+  npm ([cdf3361](https://github.com/mineejo/multitry/commits/cdf336157a3232d068e714e74b41e97df0168cdb))
+* tsbuildinfo which was not ignored, but should
+  have ([29bb7ed](https://github.com/mineejo/multitry/commits/29bb7ed537676db4709d29e742b22eb2572036c5))
 
 ## [1.1.0](https://github.com/mineejo/multitry/compare/v1.0.3...v1.1.0) (2023-04-15)
 
 ### Features
 
-- specify several constructions in the function ([c3b3fde](https://github.com/mineejo/multitry/commits/c3b3fde454fc22378911c478000003094a6f6aa0))
+- specify several constructions in the
+  function ([c3b3fde](https://github.com/mineejo/multitry/commits/c3b3fde454fc22378911c478000003094a6f6aa0))
 - update jsdoc ([c80627d](https://github.com/mineejo/multitry/commits/c80627d44843a182c47f2c8e75c17c921464bf9d))
 
 ### [1.0.3](https://github.com/mineejo/multitry/compare/v1.0.2...v1.0.3) (2023-04-15)
 
 ### Bug Fixes
 
-- **config:** remove the rest of the example ([a8d74df](https://github.com/mineejo/multitry/commits/a8d74df9d5bc7be47752eae2b80ea1fd5f76a9c9))
+- **config:** remove the rest of the
+  example ([a8d74df](https://github.com/mineejo/multitry/commits/a8d74df9d5bc7be47752eae2b80ea1fd5f76a9c9))
 
 ### [1.0.2](https://github.com/mineejo/multitry/compare/v1.0.1...v1.0.2) (2023-04-15)
 
