@@ -13,7 +13,7 @@ on:
       - "README.md"
 
 jobs:
-  build:
+  push:
     runs-on: ubuntu-latest
 
     strategy:
@@ -22,14 +22,17 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
-      - name: Setup Node.js
+      - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-      - run: npm install -g yarn
+      - name: Install yarn
+        run: npm install -g yarn
+      - name: Install dependencies
+        run: yarn install
       - name: Build docs
-        run: yarn install && yarn build:docs
-      - name: Commit build
+        run: yarn build:docs
+      - name: Push docs
         run: |
           git add "./docs"
           git config --global user.name 'mineejo'
