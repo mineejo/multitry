@@ -29,12 +29,6 @@ jobs:
       - run: npm install -g yarn
       - name: Build docs
         run: yarn install && yarn build:docs
-
-  push:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
       - name: Commit build
         run: |
           git add "./docs"
