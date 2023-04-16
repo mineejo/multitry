@@ -2,7 +2,7 @@ name: npm-publish
 
 on:
   release:
-    types: [created]
+    types: [ created ]
 
 jobs:
   build:
@@ -21,7 +21,8 @@ jobs:
           else
           npm i
           fi
-      - run: npm test
+      - name: Run test
+        run: npm test
 
   publish-npm:
     needs: build
@@ -41,6 +42,9 @@ jobs:
           else
           npm i
           fi
-      - run: npm publish
+      - name: Build tsc
+        run: yarn build:tsc
+      - name: Publish package
+        run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}

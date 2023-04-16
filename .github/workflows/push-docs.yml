@@ -15,11 +15,9 @@ on:
 jobs:
   push:
     runs-on: ubuntu-latest
-
     strategy:
       matrix:
         node-version: [ 16.x ]
-
     steps:
       - uses: actions/checkout@v3
       - name: Set up Node.js
@@ -31,7 +29,7 @@ jobs:
       - name: Install dependencies
         run: yarn install
       - name: Build docs
-        run: yarn build:docs
+        run: yarn build:typedoc
       - name: Push docs
         run: |
           git add "./docs"

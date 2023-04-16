@@ -26,8 +26,8 @@
     "lint": "eslint ./lib",
     "test": "jest",
     "remove:build": "rimraf dist && rimraf docs",
-    "build": "yarn remove:build && tsc && yarn typedoc ./lib/index.ts && yarn format",
-    "build:docs": "yarn remove:build && yarn typedoc ./lib/index.ts && prettier --write ./docs",
+    "build:tsc": "yarn remove:build && tsc && prettier --write ./dist",
+    "build:typedoc": "yarn remove:build && yarn typedoc ./lib/index.ts && prettier --write ./docs",
     "release": "standard-version"
   },
   "devDependencies": {

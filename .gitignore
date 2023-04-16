@@ -1,11 +1,9 @@
 # Dependency directories
 /node_modules/
 
-# TypeScript cache
-dist/tsconfig.tsbuildinfo
-
 # Generate output
 /dist/
+/docs/
 
 # Yarn
 /.yarn/cache/
