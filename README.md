@@ -30,6 +30,16 @@ pnpm add multitry
 
 ## Example
 
+```jsx
+// Normal import
+import { multitry } from "multitry";
+// Jsx / Tsx import
+import { Multitry } from "multitry";
+// Cdn import
+import { multitry } from
+    "https://www.unpkg.com/multitry/dist/lib/index.js";
+```
+
 An example where an error is ignored and the return value can either be a value or undefined.
 
 ```js
