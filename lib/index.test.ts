@@ -19,7 +19,7 @@ test("multitry: async return result", async () => {
           try: () => "Hello world!",
         })
       );
-    }, 10);
+    }, 1);
   });
 
   const message = "Hello world!";
@@ -64,7 +64,7 @@ test("multitry: async return error", async () => {
           catch: () => undefined,
         })
       );
-    }, 10);
+    }, 1);
   });
 
   const message = "world is not defined";
