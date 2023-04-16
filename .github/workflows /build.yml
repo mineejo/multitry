@@ -17,14 +17,3 @@ jobs:
           node-version: ${{ env.NODE_VERSION }}
 
       - run: npm install -g yarn
-
-      - name: Build docs
-        run: yarn install && yarn build:docs
-
-      - name: Commit build
-        run: |
-          git add "./docs"
-          git config --global user.name 'mineejo'
-          git config --global user.email 'mineejo@users.noreply.github.com'
-          git commit -am "chore(build): automatic documentation builder"
-          git push
