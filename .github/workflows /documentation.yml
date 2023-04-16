@@ -3,10 +3,14 @@ name: push a documentation
 on:
   push:
     branches: [ master ]
-    paths: [ 'lib/**', 'README.md' ]
+    paths:
+      - "lib/**"
+      - "README.md"
   pull_request:
     branches: [ master ]
-    paths: [ 'lib/**', 'README.md' ]
+    paths:
+      - "lib/**"
+      - "README.md"
 
 jobs:
   build:
