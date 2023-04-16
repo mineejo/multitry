@@ -4339,7 +4339,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"marked@npm:^4.2.12":
+"marked@npm:^4.3.0":
   version: 4.3.0
   resolution: "marked@npm:4.3.0"
   bin:
@@ -4423,21 +4423,21 @@ __metadata:
   languageName: node
   linkType: hard
 
-"minimatch@npm:^7.1.3":
-  version: 7.4.6
-  resolution: "minimatch@npm:7.4.6"
-  dependencies:
-    brace-expansion: ^2.0.1
-  checksum: 1a6c8d22618df9d2a88aabeef1de5622eb7b558e9f8010be791cb6b0fa6e102d39b11c28d75b855a1e377b12edc7db8ff12a99c20353441caa6a05e78deb5da9
-  languageName: node
-  linkType: hard
-
 "minimatch@npm:^8.0.2":
   version: 8.0.4
   resolution: "minimatch@npm:8.0.4"
   dependencies:
     brace-expansion: ^2.0.1
   checksum: 2e46cffb86bacbc524ad45a6426f338920c529dd13f3a732cc2cf7618988ee1aae88df4ca28983285aca9e0f45222019ac2d14ebd17c1edadd2ee12221ab801a
+  languageName: node
+  linkType: hard
+
+"minimatch@npm:^9.0.0":
+  version: 9.0.0
+  resolution: "minimatch@npm:9.0.0"
+  dependencies:
+    brace-expansion: ^2.0.1
+  checksum: 7bd57899edd1d1b0560f50b5b2d1ea4ad2a366c5a2c8e0a943372cf2f200b64c256bae45a87a80915adbce27fa36526264296ace0da57b600481fe5ea3e372e5
   languageName: node
   linkType: hard
 
@@ -5950,18 +5950,18 @@ __metadata:
   linkType: hard
 
 "typedoc@npm:^0.24.1":
-  version: 0.24.1
-  resolution: "typedoc@npm:0.24.1"
+  version: 0.24.2
+  resolution: "typedoc@npm:0.24.2"
   dependencies:
     lunr: ^2.3.9
-    marked: ^4.2.12
-    minimatch: ^7.1.3
+    marked: ^4.3.0
+    minimatch: ^9.0.0
     shiki: ^0.14.1
   peerDependencies:
     typescript: 4.6.x || 4.7.x || 4.8.x || 4.9.x || 5.0.x
   bin:
     typedoc: bin/typedoc
-  checksum: 49ecc56060a9d37fd3da4fb57f0a848bf618f3b97542ef503dad67e805a611359ad2453a625da0e2dd7a2d9eb7992bcefded58115b5cb3ddc98780b548e6dfd5
+  checksum: ada472d51d4cd437a665d9d7545c8ceed7c1d27e56d3f9790aa4f6b3ad3c9957ea1e0c2648f28145f060f1988e290dd6a1733c8e550399cdacfb3f40d22718b4
   languageName: node
   linkType: hard
 
