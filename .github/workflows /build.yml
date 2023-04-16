@@ -1,14 +1,6 @@
 name: build
 
-on:
-  push:
-    paths:
-      - "lib/**"
-      - "README.md"
-  pull_request:
-    paths:
-      - "lib/**"
-      - "README.md"
+on: [ push, pull_request ]
 
 jobs:
   build:
