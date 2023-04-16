@@ -1,7 +1,13 @@
 # Changelog
 
-All notable changes to this project will be documented in this file.
-See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+## [2.2.0](https://github.com/mineejo/multitry/compare/v2.1.1...v2.2.0) (2023-04-16)
+
+
+### Features
+
+* **package:** update the shields ([186f705](https://github.com/mineejo/multitry/commits/186f705a70e8caf5270ebc91f65fc8639651779e))
 
 ### [2.1.1](https://github.com/mineejo/multitry/compare/v2.1.0...v2.1.1) (2023-04-15)
 
