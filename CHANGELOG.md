@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [2.2.1](https://github.com/mineejo/multitry/compare/v2.2.0...v2.2.1) (2023-04-16)
+
+
+### Bug Fixes
+
+* test timeout ([f5e142d](https://github.com/mineejo/multitry/commits/f5e142d791ed34ede52a0eab6bc68124f2559c19))
+
 ## [2.2.0](https://github.com/mineejo/multitry/compare/v2.1.1...v2.2.0) (2023-04-16)
 
 
