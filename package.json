@@ -21,13 +21,14 @@
     "finally"
   ],
   "scripts": {
-    "clean": "rimraf dist && rimraf docs",
-    "lint": "eslint ./lib",
-    "format": "prettier --write .",
-    "build": "yarn clean && tsc && yarn typedoc ./lib/index.ts && yarn format",
-    "test": "jest",
     "prepare": "husky install",
-    "release": "standard-version && npm publish --access public"
+    "format": "prettier --write .",
+    "lint": "eslint ./lib",
+    "test": "jest",
+    "remove:build": "rimraf dist && rimraf docs",
+    "build": "yarn remove:build && tsc && yarn typedoc ./lib/index.ts && yarn format",
+    "build:docs": "yarn remove:build && yarn typedoc ./lib/index.ts && prettier --write ./docs",
+    "release": "standard-version"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.6.1",
