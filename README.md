@@ -12,7 +12,7 @@
 
 Multitry is a wrapper with a different take on `try-catch-finally` construction.
 
-## Install (TEST3)
+## Install (TEST4)
 
 Choose the way you like, if you don't understand what these commands are, use the first one with the npm.
 
