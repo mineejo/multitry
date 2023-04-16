@@ -21,7 +21,7 @@
     "finally"
   ],
   "scripts": {
-    "prepare": "husky install",
+    "prepare": "husky install && chmod ug+x .husky/* && chmod ug+x .git/hooks/*",
     "format": "prettier --write .",
     "lint": "eslint ./lib",
     "test": "jest",
