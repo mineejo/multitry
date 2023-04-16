@@ -34,6 +34,7 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v3
       - name: Commit build
         run: |
           git add "./docs"
