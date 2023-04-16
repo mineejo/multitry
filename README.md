@@ -5,9 +5,7 @@
 [![CodePen](https://img.shields.io/badge/CodePen-000000.svg?style=&logo=CodePen)][CODEPEN_URL]
 
 [DOCS_URL]: https://mineejo.github.io/multitry/
-
 [NPM_URL]: https://npmjs.org/package/multitry
-
 [CODEPEN_URL]: https://codepen.io/mineejo/pen/abRNQwo
 
 Multitry is a wrapper with a different take on `try-catch-finally` construction.
@@ -36,8 +34,7 @@ import { multitry } from "multitry";
 // Jsx / Tsx import
 import { Multitry } from "multitry";
 // Cdn import
-import { multitry } from
-    "https://www.unpkg.com/multitry/dist/lib/index.js";
+import { multitry } from "https://www.unpkg.com/multitry/dist/lib/index.js";
 ```
 
 An example where an error is ignored and the return value can either be a value or undefined.
