@@ -31,3 +31,6 @@ yarn.lock
 # Commits
 .commitlintrc.json
 .versionrc.json
+
+# GitHub
+/.github/
