@@ -1,0 +1,43 @@
+name: push-docs
+
+on:
+  push:
+    branches: [ master ]
+    paths:
+      - "lib/**"
+      - "README.md"
+  pull_request:
+    branches: [ master ]
+    paths:
+      - "lib/**"
+      - "README.md"
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [ 16.x ]
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+      - run: npm install -g yarn
+      - name: Build docs
+        run: yarn install && yarn build:docs
+
+  push:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Commit build
+        run: |
+          git add "./docs"
+          git config --global user.name 'mineejo'
+          git config --global user.email 'mineejo@users.noreply.github.com'
+          git commit -am "chore(build): automatic documentation builder"
+          git push
