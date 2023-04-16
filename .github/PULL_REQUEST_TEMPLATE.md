@@ -1,4 +1,4 @@
-- [ ] Read the [contributing guide](../CONTRIBUTING.md "contributing guide")
+- [ ] Commit message named according to [contributing guide](../CONTRIBUTING.md "contributing guide")
 - [ ] `yarn lint` - Successfully
 - [ ] `yarn test` - Successfully
 - [ ] `yarn format` - Done
