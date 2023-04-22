@@ -12,23 +12,17 @@
 
 Multitry is a wrapper with a different take on `try-catch-finally` construction.
 
-## Install
+If you've ever written try to catch, you've run into variable scope, nested try to catch, or just ignored catch - you
+can use this wrapper to avoid them!
 
-Choose the way you like, if you don't understand what these commands are, use the first one with the npm.
+Install with `npm install multitry`.
 
-```shell
-npm install multitry 
-```
+## Usage and API
 
-```shell
-yarn add multitry
-```
+### Import
 
-```shell
-pnpm add multitry
-```
-
-## Example
+The package is written in TypeScript and compiled in JavaScript ESM, there is no support for CommonJS, keep that in
+mind!
 
 ```jsx
 // Normal import
@@ -39,7 +33,16 @@ import { Multitry } from "multitry";
 import { multitry } from "https://www.unpkg.com/multitry/dist/lib/index.js";
 ```
 
-An example where an error is ignored and the return value can either be a value or undefined.
+### Error handling
+
+One of the main differences of Multitry is that an error will never throw an exception without intervention, the
+following are examples of how an error or undefined can return, this has positive features because you can handle the
+error or override the default value immediately.
+
+### Ignoring
+
+The error is ignored and the return value can either be a value or undefined. It may be undefined because the error has
+not been handled.
 
 ```js
 const result = multitry({
@@ -49,7 +52,11 @@ const result = multitry({
 console.log(result); // "Hello world!"
 ```
 
-An example where an error is ignored and the return value can either be a value, undefined, or an error object.
+### Error ejection
+
+The returned value can either be a value, an undefined value, or an error object. This happens because catch was
+specified, but for some reason the error was not handled and returned. Note that the error will return, not throw an
+exception.
 
 ```js
 const result = multitry({
@@ -69,6 +76,23 @@ const result = multitry({
 }); // SyntaxError: Unexpected token H in JSON at position 0...
 ```
 
+### Multi
+
+Specifying several tries will return the first successful one. This way you can handle ignoring an error, which is not
+recommended when you can use catch and is shown just for the example.
+
+```javascript
+const result = multitry({
+    // Variable "something" does not exist, which will cause an exception.
+    try: () => something
+  },
+  {
+    try: () => "foo",
+  }); // foo
+```
+
+### Other
+
 JSX / TSX support when you want to render something in the DOM.
 
 ```jsx
@@ -80,3 +104,5 @@ JSX / TSX support when you want to render something in the DOM.
   }}
 /> // SyntaxError: Unexpected token 'H', "Hello world! {" is not valid JSON
 ```
+
+[Read more about API...][DOCS_URL]
