@@ -12,3 +12,9 @@ The commit message should be structured as follows:
 
 [optional footer(s)]
 ```
+
+Optionally, install hooks for commits. For regular developers, this is a must.
+
+```shell
+husky install # && chmod ug+x .husky/* && chmod ug+x .git/hooks/*"
+```
