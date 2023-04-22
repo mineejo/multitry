@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [2.3.0](https://github.com/mineejo/multitry/compare/v2.2.1...v2.3.0) (2023-04-22)
+
+
+### Features
+
+* add examples and information to README.md ([271ceea](https://github.com/mineejo/multitry/commits/271ceeaad4fd3635a31345a10376450305708771))
+
+
+### Bug Fixes
+
+* dependency conflict in the locke file ([983f145](https://github.com/mineejo/multitry/commits/983f1458dfd6699b2b6b7cbc2a9ce95355d71f9d))
+
 ### [2.2.1](https://github.com/mineejo/multitry/compare/v2.2.0...v2.2.1) (2023-04-16)
 
 
