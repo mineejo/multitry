@@ -26,11 +26,11 @@ mind!
 
 ```jsx
 // Normal import
-import { multitry } from "multitry";
+import { wrap } from "multitry";
 // Jsx / Tsx import
-import { Multitry } from "multitry";
+import { Wrap } from "multitry";
 // Cdn import
-import { multitry } from "https://www.unpkg.com/multitry/dist/lib/index.js";
+import { wrap } from "https://www.unpkg.com/multitry/dist/lib/index.js";
 ```
 
 ### Error handling
@@ -45,7 +45,7 @@ The error is ignored and the return value can either be a value or undefined. It
 not been handled.
 
 ```js
-const result = multitry({
+const result = wrap({
   try: () => JSON.parse("Hello world!"),
 });
 
@@ -59,7 +59,7 @@ specified, but for some reason the error was not handled and returned. Note that
 exception.
 
 ```js
-const result = multitry({
+const result = wrap({
   try: () => JSON.parse("Hello world! {"),
   catch: () => undefined,
 });
@@ -70,7 +70,7 @@ console.error(result); // SyntaxError: Unexpected token H in JSON at position 0.
 You can interact with an error in the catch function. Handle the error or just output.
 
 ```js
-const result = multitry({
+const result = wrap({
   try: () => JSON.parse("Hello world! {"),
   catch: (e) => console.error(e),
 }); // SyntaxError: Unexpected token H in JSON at position 0...
@@ -82,7 +82,7 @@ Specifying several tries will return the first successful one. This way you can 
 recommended when you can use catch and is shown just for the example.
 
 ```javascript
-const result = multitry({
+const result = wrap({
     // Variable "something" does not exist, which will cause an exception.
     try: () => something
   },
@@ -96,7 +96,7 @@ const result = multitry({
 JSX / TSX support when you want to render something in the DOM.
 
 ```jsx
-<Multitry
+<Wrap
   try={() => JSON.parse("Hello world! {")}
   catch={(e) => {
     console.error(e);
