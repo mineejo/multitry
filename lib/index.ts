@@ -1,5 +1,5 @@
 /**
- * The multitry function is a wrapper for a functional try-catch-finally
+ * The wrap function is a wrapper for a functional try-catch-finally
  * construction that returns a value or undefined in case of an error
  * without handling the Error object.
  *
@@ -13,10 +13,10 @@
  *   will be executed in the try block. It can also have an optional
  *   catch property.
  *
- * @returns The multitry function can return a value of type,
+ * @returns The wrap function can return a value of type,
  * an Error object, or undefined.
  */
-export function multitry<Type>(
+export function wrap<Type>(
   ...blocks: {
     try: () => Type;
     catch?: (error: Error) => Error | Type;
@@ -43,7 +43,7 @@ export function multitry<Type>(
 }
 
 /**
- * The Multitry function is a wrapper for multitry that allows for
+ * The Wrap function is a wrapper for wrap that allows for
  * try, catch, and finally blocks in jsx/tsx.
  *
  * @param {{
@@ -56,14 +56,14 @@ export function multitry<Type>(
  *   will be executed in the try block. It can also have an optional
  *   catch property.
  *
- * @returns The `Multitry` function returns a string, an Error object, or undefined.
+ * @returns The `Wrap` function returns a string, an Error object, or undefined.
  */
-export function Multitry(blocks: {
+export function Wrap(blocks: {
   try: () => string | void;
   catch?: (error: Error) => Error | string;
   finally?: () => void;
 }): string | Error | undefined {
-  return multitry({
+  return wrap({
     try: () => {
       if (blocks?.["try"]) {
         return `${blocks["try"]()}`;

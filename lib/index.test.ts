@@ -1,9 +1,9 @@
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-ignore
-import { multitry } from "./index.ts";
+import { wrap } from "./index.ts";
 
-test("multitry: return result", () => {
-  const result = multitry({
+test("wrap: return result", () => {
+  const result = wrap({
     try: () => "Hello world!",
   });
 
@@ -11,11 +11,11 @@ test("multitry: return result", () => {
   expect(result).toBe(message);
 });
 
-test("multitry: async return result", async () => {
+test("wrap: async return result", async () => {
   const result = await new Promise((resolve) => {
     setTimeout(() => {
       resolve(
-        multitry({
+        wrap({
           try: () => "Hello world!",
         })
       );
@@ -26,8 +26,8 @@ test("multitry: async return result", async () => {
   expect(result).toBe(message);
 });
 
-test("multitry: multi return result", () => {
-  const result = multitry(
+test("wrap: multi return result", () => {
+  const result = wrap(
     {
       try: () => undefined,
     },
@@ -40,8 +40,8 @@ test("multitry: multi return result", () => {
   expect(result).toBe(message);
 });
 
-test("multitry: return error", () => {
-  const error = multitry({
+test("wrap: return error", () => {
+  const error = wrap({
     // eslint-disable-next-line @typescript-eslint/ban-ts-comment
     // @ts-ignore
     try: () => world,
@@ -53,11 +53,11 @@ test("multitry: return error", () => {
   expect(error?.["message"]).toBe(message);
 });
 
-test("multitry: async return error", async () => {
+test("wrap: async return error", async () => {
   const error = await new Promise((resolve) => {
     setTimeout(() => {
       resolve(
-        multitry({
+        wrap({
           // eslint-disable-next-line @typescript-eslint/ban-ts-comment
           // @ts-ignore
           try: () => world,
