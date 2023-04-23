@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.1.0](https://github.com/mineejo/multitry/compare/v3.0.0...v3.1.0) (2023-04-23)
+
+
+### Features
+
+* update the usage in README.md ([4197644](https://github.com/mineejo/multitry/commits/41976442e56ccf8cf53bad56936d71636206f636))
+
 ## [3.0.0](https://github.com/mineejo/multitry/compare/v2.3.1...v3.0.0) (2023-04-23)
 
 

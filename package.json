@@ -1,6 +1,6 @@
 {
   "name": "multitry",
-  "version": "3.0.0",
+  "version": "3.1.0",
   "author": "mineejo <mineejo.dev@gmail.com> (https://github.com/mineejo)",
   "description": "Multitry is a wrapper with a different take on try-catch-finally construction",
   "type": "module",
