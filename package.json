@@ -48,29 +48,6 @@
     "typedoc": "^0.24.1",
     "typescript": "^5.0.3"
   },
-  "eslintConfig": {
-    "extends": [
-      "eslint:recommended",
-      "plugin:@typescript-eslint/recommended",
-      "plugin:prettier/recommended"
-    ],
-    "parser": "@typescript-eslint/parser",
-    "plugins": [
-      "@typescript-eslint",
-      "prettier"
-    ],
-    "root": true,
-    "ignorePatterns": [
-      "node_modules/**/*"
-    ]
-  },
-  "jest": {
-    "moduleNameMapper": {
-      "^(\\.\\/.+)\\.js$": "$1"
-    },
-    "preset": "ts-jest",
-    "testEnvironment": "node"
-  },
   "packageManager": "yarn@3.5.0",
   "engines": {
     "node": ">=16"

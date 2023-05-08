@@ -39,3 +39,9 @@ CODE_OF_CONDUCT.md
 CONTRIBUTING.md
 SECURITY.md
 .gitattributes
+
+# Jest
+jest.config.json
+
+# ESLint
+.eslintrc.json
