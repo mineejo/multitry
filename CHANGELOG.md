@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.1.2](https://github.com/mineejo/multitry/compare/v3.1.1...v3.1.2) (2023-05-08)
+
+
+### Bug Fixes
+
+* remove useless files for npm ([49687d8](https://github.com/mineejo/multitry/commits/49687d8d8991194822f2850f9a6207d4e42759a2))
+
 ### [3.1.1](https://github.com/mineejo/multitry/compare/v3.1.0...v3.1.1) (2023-05-08)
 
 
