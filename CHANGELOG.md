@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [3.1.1](https://github.com/mineejo/multitry/compare/v3.1.0...v3.1.1) (2023-05-08)
+
+
+### Bug Fixes
+
+* remove the inconsistency of .ts (.js) imports for jest ([fbf798d](https://github.com/mineejo/multitry/commits/fbf798d5f12cc473d5a03f82438e46254aa281be))
+* remove useless files for npm ([e7f7c53](https://github.com/mineejo/multitry/commits/e7f7c53749655dd4362e469ae726d3b5e085c3c8))
+
 ## [3.1.0](https://github.com/mineejo/multitry/compare/v3.0.0...v3.1.0) (2023-04-23)
 
 
