@@ -1,7 +1,0 @@
-{
-  "moduleNameMapper": {
-    "^(\\.\\/.+)\\.js$": "$1"
-  },
-  "preset": "ts-jest",
-  "testEnvironment": "node"
-}
