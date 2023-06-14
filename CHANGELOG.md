@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [3.2.0](https://github.com/mineejo/multitry/compare/v3.1.3...v3.2.0) (2023-06-14)
+
+
+### Features
+
+* replace jest with ava, for more appropriate tests with ES6 ([5e75c00](https://github.com/mineejo/multitry/commits/5e75c00f809f48dbc20215a262a8deb2c2a564a9))
+
 ### [3.1.3](https://github.com/mineejo/multitry/compare/v3.1.2...v3.1.3) (2023-05-08)
 
 
