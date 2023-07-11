@@ -6,7 +6,7 @@
 
 [DOCS_URL]: https://mineejo.github.io/multitry/
 
-[NPM_URL]: https://npmjs.org/package/multitry
+[NPM_URL]: https://www.npmjs.com/package/multitry?activeTab=readme
 
 [CODEPEN_URL]: https://codepen.io/mineejo/pen/abRNQwo
 
